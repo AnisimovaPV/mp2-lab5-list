@@ -3,6 +3,7 @@
 #include "TPolinom.h"
 #include "TList.h"
 
+
 using namespace std;
 
 int main()

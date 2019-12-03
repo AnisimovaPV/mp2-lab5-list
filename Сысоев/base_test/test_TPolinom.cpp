@@ -2,6 +2,7 @@
 #include "TMonom.h"
 #include <gtest.h>
 
+
 //POLINOM
 TEST(TPolinom, can_create_first_polinom)
 {
@@ -177,6 +178,7 @@ TEST(TPolinom, subtraction_different_polinoms_experement_2)
 	TPolinom p3;
 	EXPECT_EQ("10.000000x^5y^3z^2+8.000000x^4y^5z^2-6.000000x^3y^5+5.000000x^2y^5z^6-5.000000x^2y^5z+3.000000xy^5z^6-16.000000xyz+20.000000", p3.GetPolin(p1 - p2));
 }
+
 //MONOM
 TEST(TMonom, can_get_coefficient_monom_exp_1)
 {

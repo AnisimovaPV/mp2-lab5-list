@@ -4,6 +4,7 @@
 #include "TPolinom.h"
 #include "TList.h"
 
+
 void TPolinom::WriteMonom()
 {
 	monom.DeleteAllNodes();    //удаление всех мономов
