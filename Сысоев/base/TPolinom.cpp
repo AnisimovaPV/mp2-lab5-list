@@ -374,7 +374,7 @@ string TPolinom::Integration(char ch)
 	}
 	return newpolinom;
 }
-int TPolinom::ResultInXYZ(int _x, int _y, int _z)
+double TPolinom::ResultInXYZ(int _x, int _y, int _z)
 {
 	double sum = 0;
 	monom.DeleteAllNodes();    //удаление всех мономов
@@ -439,7 +439,7 @@ int TPolinom::ResultInXYZ(int _x, int _y, int _z)
 						else
 						{
 							int pr = 1;
-							for (int t = 0; t < (int)(monoms_str[i][j + 2] - '0'); t++)
+							for (int t = 0; t < (int)(monoms_str[i][j + 2] - '0'); t++) 
 							{
 								pr *= _y;
 							}
