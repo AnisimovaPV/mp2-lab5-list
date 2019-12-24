@@ -2,6 +2,7 @@
 #include "TMonom.h"
 #include <gtest.h>
 
+
 //POLINOM
 TEST(TPolinom, can_create_first_polinom)
 {
@@ -53,15 +54,15 @@ TEST(TPolinom, can_assign_polinoms_experement_2)
 }
 TEST(TPolinom, result_polinom_in_point_experement_1)
 {
-	TPolinom p1("2x^4y^2z+7xyz+2z");
-	int res = p1.ResultInXYZ(1, 1, 2);
-	EXPECT_TRUE(22 == res);
+	TPolinom p1("2.1x^4y^2z+7xyz+2z");
+	double res = p1.ResultInXYZ(1, 1, 2);
+	EXPECT_TRUE(22.2 == res);
 }
 TEST(TPolinom, result_polinom_in_point_experement_2)
 {
-	TPolinom p1("4x^7y^3+7x^4y^5z^2");
-	int res = p1.ResultInXYZ(1, 1, 2);
-	EXPECT_TRUE(32 == res);
+	TPolinom p1("4x^7y^3+7x^4y^5z^2+10.5");
+	double res = p1.ResultInXYZ(1, 1, 2);
+	EXPECT_TRUE(42.5 == res);
 }
 TEST(TPolinom, can_get_derivative_polinom_to_x_experement_1)
 {
@@ -177,6 +178,7 @@ TEST(TPolinom, subtraction_different_polinoms_experement_2)
 	TPolinom p3;
 	EXPECT_EQ("10.000000x^5y^3z^2+8.000000x^4y^5z^2-6.000000x^3y^5+5.000000x^2y^5z^6-5.000000x^2y^5z+3.000000xy^5z^6-16.000000xyz+20.000000", p3.GetPolin(p1 - p2));
 }
+
 //MONOM
 TEST(TMonom, can_get_coefficient_monom_exp_1)
 {

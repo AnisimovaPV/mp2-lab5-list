@@ -3,6 +3,7 @@
 #include "TPolinom.h"
 #include "TList.h"
 
+
 using namespace std;
 
 int main()
@@ -35,7 +36,8 @@ int main()
 		switch (n)
 		{
 		case 1:
-			cout << p + p1 << endl << endl;
+			cout << p + p1 << endl << endl;  
+			break;
 		case 2:
 			cout << p - p1 << endl << endl;
 			break;
@@ -53,7 +55,7 @@ int main()
 		case 5:
 			int x1, y1, z1;
 			cin >> x1 >> y1 >> z1;
-			cout << "Итог=  " << p1.ResultInXYZ(x, y, z) << endl << endl;
+			cout << "Итог=  " << p1.ResultInXYZ(x1, y1, z1) << endl << endl;
 			break;
 		case 6:
 			cout << "Производную 1 или 2 полинома ? " << endl;
@@ -100,13 +102,13 @@ int main()
 			switch (integ)
 			{
 			case 1:
-				cout << "Интеграл= " << p3.Integration('x') << endl << endl;
+				cout << "Интеграл по x= " << p3.Integration('x') << endl << endl;
 				break;
 			case 2:
-				cout << "Интеграл= " << p3.Integration('y') << endl << endl;
+				cout << "Интеграл по y= " << p3.Integration('y') << endl << endl;
 				break;
 			case 3:
-				cout << "Интеграл= " << p3.Integration('z') << endl << endl;
+				cout << "Интеграл по z= " << p3.Integration('z') << endl << endl;
 				break;
 			default:
 				cout << "Такого номера нет " << endl << endl;

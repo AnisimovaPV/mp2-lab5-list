@@ -2,6 +2,7 @@
 #include <iostream>
 
 const int MAXSIZELIST = 1000;
+
 using namespace std;
 
 template<class Type>

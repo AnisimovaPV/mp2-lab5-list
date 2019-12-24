@@ -1,6 +1,7 @@
 #include "TList.h"
 #include <gtest.h>
 
+
 //INDICATOR
 TEST(TIndicator, can_create_indicator)
 {

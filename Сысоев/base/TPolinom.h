@@ -6,6 +6,7 @@
 #include <vector>
 #include <cmath>
 
+
 using namespace std;
 
 class TPolinom
@@ -27,7 +28,7 @@ public:
 	TPolinom& operator=(TPolinom& p);
 	TPolinom  operator+(TPolinom& p);
 	TPolinom  operator-(TPolinom& p);
-	int ResultInXYZ(int _x, int _y, int _z);       //результат в точке 
+	double ResultInXYZ(int _x, int _y, int _z);    //результат в точке 
 	string XYZ_Diff(char ch);                      //производная
 	string Integration(char ch);                   //интеграл
 	string GetPolin(TPolinom& p);                  //получение полинома как строки
